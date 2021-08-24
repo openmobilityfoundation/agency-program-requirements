@@ -8,4 +8,4 @@ See the [Policy Requirements - OMF Hosting Guidance](https://github.com/openmobi
 
 Each agency that chooses to host a public, referenceable file here can place it in the [/requirement](/requirement) folder.
 
-Additions and updates to files can be made by [opening an issue](../../issues), [creating a PR](../../pulls), or [contacting the OMF](https://www.openmobilityfoundation.org/get-in-touch/). Changes to the file are automatically tracked. OMF Staff is responsible for final approvals and ensures the files are valid.
+Additions and updates to files can be made by [opening an issue](https://github.com/openmobilityfoundation/agency-program-requirements/issues), [creating a PR](https://github.com/openmobilityfoundation/agency-program-requirements/pulls), or [contacting the OMF](https://www.openmobilityfoundation.org/get-in-touch/). Changes to the file are automatically tracked. OMF Staff is responsible for final approvals and ensures the files are valid.
