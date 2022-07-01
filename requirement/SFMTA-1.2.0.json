@@ -47,9 +47,9 @@
                 {
                   "endpoint_name":"reports",
                   "required_fields": [
-                    "Special Group Type.all_riders",
-                    "Special Group Type.low_income",
-                    "Special Group Type.adaptive_scooters"
+                    "special_group_type.all_riders",
+                    "special_group_type.low_income",
+                    "special_group_type.adaptive_scooters"
                   ]
                 }
               ]
@@ -61,7 +61,7 @@
               "available_endpoints": [
                 {
                   "endpoint_name": "geographies",
-                  "url": "https://data.sfgov.org/Transportation/SFMTA-Mobility-Data-Specification-Geography/yfsn-wn3u",
+                  "url": "https://data.sfgov.org/download/yfsn-wn3u/application%2Fjson",
                   "available_fields": [
                     "geography_type",
                     "description",
