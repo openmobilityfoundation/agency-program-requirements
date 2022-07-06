@@ -1,0 +1,163 @@
+{
+  "metadata": {
+    "mds_release": "1.2.0",
+    "file_version": "1",
+    "last_updated": "1656451333",
+    "max_update_interval": "P1M",
+    "agency_id": "8e03693b-0153-446c-8bc0-c31f8a5a7ed8",
+    "agency_name": "San Francisco Municipal Transportation Agency",
+    "agency_timezone": "America/Los_Angeles",
+    "agency_language": "en-US",
+    "agency_currency": "USD",
+    "agency_website_url": "https://www.sfmta.com/",
+    "url": "https://raw.githubusercontent.com/openmobilityfoundation/agency-program-requirements/main/requirement/SFMTA-1.2.0.json"
+  },
+  "programs": [
+    {
+      "description": "Powered Scooter Share Permit Program",
+      "program_website_url": "https://www.sfmta.com/projects/powered-scooter-share-permit-program",
+      "program_document_url": "https://www.sfmta.com/sites/default/files/reports-and-documents/2022/06/powered_scooter_share_program_permit_term_extension_policy_directive_6.21.2022_signed.pdf",
+      "provider_ids": [
+        "63f13c48-34ff-49d2-aca7-cf6a5b6171c3",
+        "70aa475d-1fcd-4504-b69c-2eeb2107f7be",
+        "07a25fe6-d0be-11e8-a8d5-f2801f1b9fd1"
+      ],
+      "vehicle_types": [
+        "scooter"
+      ],
+      "start_date": "1654585200",
+      "end_date": null,
+      "required_data_specs": [
+        {
+          "data_spec_name": "MDS",
+          "version": "1.1",
+          "required_apis": [
+            {
+              "api_name": "provider",
+              "required_endpoints": [
+                {
+                  "endpoint_name":"trips"
+                },
+                {
+                  "endpoint_name":"status_changes"
+                },
+                {
+                  "endpoint_name":"vehicles"
+                },
+                {
+                  "endpoint_name":"reports",
+                  "required_fields": [
+                    "special_group_type.all_riders",
+                    "special_group_type.low_income",
+                    "special_group_type.adaptive_scooters"
+                  ]
+                }
+              ]
+            }
+          ],
+          "available_apis": [
+            {
+              "api_name":"geography",
+              "available_endpoints": [
+                {
+                  "endpoint_name": "geographies",
+                  "url": "https://data.sfgov.org/download/yfsn-wn3u/application%2Fjson",
+                  "available_fields": [
+                    "geography_type",
+                    "description",
+                    "effective_date"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "data_spec_name": "GBFS",
+          "version": "2.2",
+          "required_apis": [
+            {
+              "required_endpoints": [
+                {
+                  "endpoint_name":"gbfs.json"
+                },
+                {
+                  "endpoint_name":"system_information.json"
+                },
+                {
+                  "endpoint_name":"free_bike_status.json"
+                },
+                {
+                  "endpoint_name":"system_information.json"
+                }  
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shared Electric Moped Parking Permit Program",
+      "program_website_url": "https://www.sfmta.com/projects/shared-electric-moped-parking-permit-program",
+      "program_document_url": "https://www.sfmta.com/sites/default/files/reports-and-documents/2021/08/sfmta_electric_moped_parking_permit_application_2021.pdf",
+      "provider_ids": [
+        "89301314-1210-4126-a213-3c41423f2ac5"
+      ],
+      "vehicle_types": [
+        "moped"
+      ],
+      "start_date": "1656658800",
+      "end_date": null,
+      "required_data_specs": [
+        {
+          "data_spec_name": "MDS",
+          "version": "1.1",
+          "required_apis": [
+            {
+              "api_name": "provider",
+              "required_endpoints": [
+                {
+                  "endpoint_name":"trips",
+                  "disallowed_fields": [
+                    "route"
+                    ]
+                },
+                {
+                  "endpoint_name":"status_changes"
+                },
+                {
+                  "endpoint_name":"vehicles"
+                },
+                {
+                  "endpoint_name":"reports"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "data_spec_name": "GBFS",
+          "version": "2.2",
+          "required_apis": [
+            {
+              "required_endpoints": [
+                {
+                  "endpoint_name":"gbfs.json"
+                },
+                {
+                  "endpoint_name":"system_information.json"
+                },
+                {
+                  "endpoint_name":"free_bike_status.json"
+                },
+                {
+                  "endpoint_name":"system_information.json"
+                }  
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
