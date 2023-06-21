@@ -1,8 +1,8 @@
 {
   "metadata": {
     "mds_release": "1.2.0",
-    "file_version": "1",
-    "last_updated": "1656451333",
+    "file_version": "2",
+    "last_updated": "1686350014",
     "max_update_interval": "P1M",
     "agency_id": "8e03693b-0153-446c-8bc0-c31f8a5a7ed8",
     "agency_name": "San Francisco Municipal Transportation Agency",
@@ -19,24 +19,27 @@
       "program_document_url": "https://www.sfmta.com/sites/default/files/reports-and-documents/2022/06/powered_scooter_share_program_permit_term_extension_policy_directive_6.21.2022_signed.pdf",
       "provider_ids": [
         "63f13c48-34ff-49d2-aca7-cf6a5b6171c3",
-        "70aa475d-1fcd-4504-b69c-2eeb2107f7be",
         "07a25fe6-d0be-11e8-a8d5-f2801f1b9fd1"
       ],
       "vehicle_types": [
         "scooter"
       ],
-      "start_date": "1654585200",
+      "start_date": "1688194800",
       "end_date": null,
       "required_data_specs": [
         {
           "data_spec_name": "MDS",
-          "version": "1.1",
+          "version": "1.2",
           "required_apis": [
             {
               "api_name": "provider",
               "required_endpoints": [
                 {
-                  "endpoint_name":"trips"
+                  "endpoint_name":"trips",
+                  "required_fields":[
+                    "standard_cost",
+                    "actual_cost"
+                    ]
                 },
                 {
                   "endpoint_name":"status_changes"
@@ -74,7 +77,7 @@
         },
         {
           "data_spec_name": "GBFS",
-          "version": "2.2",
+          "version": "2.3",
           "required_apis": [
             {
               "required_endpoints": [
@@ -106,12 +109,12 @@
       "vehicle_types": [
         "moped"
       ],
-      "start_date": "1656658800",
+      "start_date": "1688194800",
       "end_date": null,
       "required_data_specs": [
         {
           "data_spec_name": "MDS",
-          "version": "1.1",
+          "version": "1.2",
           "required_apis": [
             {
               "api_name": "provider",
@@ -137,7 +140,7 @@
         },
         {
           "data_spec_name": "GBFS",
-          "version": "2.2",
+          "version": "2.3",
           "required_apis": [
             {
               "required_endpoints": [
