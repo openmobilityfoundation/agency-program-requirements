@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "mds_release": "2.0.1",
+    "file_version": "1",
+    "last_updated": "1706302411",
+    "max_update_interval": "P1M",
+    "agency_id": "8e03693b-0153-446c-8bc0-c31f8a5a7ed8",
+    "agency_name": "San Francisco Municipal Transportation Agency",
+    "agency_timezone": "America/Los_Angeles",
+    "agency_language": "en-US",
+    "agency_currency": "USD",
+    "agency_website_url": "https://www.sfmta.com/",
+    "url": "https://raw.githubusercontent.com/openmobilityfoundation/agency-program-requirements/main/requirement/SFMTA-2.0.1.json"
+  },
+  "programs": [
+    {
+      "description": "Powered Scooter Share Permit Program",
+      "program_website_url": "https://www.sfmta.com/projects/powered-scooter-share-permit-program",
+      "provider_ids": [
+      ],
+      "vehicle_types": [
+        "scooter"
+      ],
+      "start_date": "1706050650",
+      "end_date": null,
+      "required_data_specs": [
+        {
+          "data_spec_name": "MDS",
+          "version": "2.0.1",
+          "mode_id":"micromobility",
+          "required_apis": [
+            {
+              "api_name": "provider",
+              "required_endpoints": [
+                {
+                  "endpoint_name": "events"
+                },
+                {
+                  "endpoint_name": "telemetry"
+                },
+                {
+                  "endpoint_name": "trips",
+                  "required_fields": [
+                    "actual_cost",
+                    "standard_cost"
+                  ]
+                },
+                {
+                  "endpoint_name": "reports",
+                  "required_fields": [
+                    "Special Group Type.all_riders",
+                    "Special Group Type.low_income",
+                    "Special Group Type.adaptive_scooters"
+                  ]
+                }
+              ]
+            },
+            {
+              "api_name": "agency",
+              "required_endpoints": [
+                {
+                  "endpoint_name": "events"
+                },
+                {
+                  "endpoint_name": "telemetry"
+                },
+                {
+                  "endpoint_name": "trips",
+                  "required_fields": [
+                    "actual_cost",
+                    "standard_cost"
+                  ]
+                }
+              ]
+            }
+          ],
+          "available_apis": [
+            {
+              "api_name": "geography",
+              "available_endpoints": [
+                {
+                  "endpoint_name": "geographies",
+                  "url": "https://services.sfmta.com/tams/mobility/geographies",
+                  "available_fields": [
+                    "geography_type",
+                    "description",
+                    "effective_date"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "data_spec_name": "GBFS",
+          "version": "2.3",
+          "required_apis": [
+            {
+              "required_endpoints": [
+                {
+                  "endpoint_name": "gbfs.json"
+                },
+                {
+                  "endpoint_name": "system_information.json"
+                },
+                {
+                  "endpoint_name": "free_bike_status.json"
+                },
+                {
+                  "endpoint_name": "system_information.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Shared Electric Moped Parking Permit Program",
+      "program_website_url": "https://www.sfmta.com/projects/shared-electric-moped-parking-permit-program",
+      "vehicle_types": [
+        "moped"
+      ],
+      "start_date": "1706050650",
+      "end_date": null,
+      "required_data_specs": [
+        {
+          "data_spec_name": "MDS",
+          "version": "2.0.1",
+          "mode_id":"micromobility",
+          "required_apis": [
+            {
+              "api_name": "provider",
+              "required_endpoints": [
+                {
+                  "endpoint_name": "events"
+                },
+                {
+                  "endpoint_name": "trips",
+                  "required_fields": [
+                    "actual_cost",
+                    "standard_cost"
+                  ]
+                },
+                {
+                  "endpoint_name": "reports",
+                  "required_fields": [
+                    "Special Group Type.all_riders",
+                    "Special Group Type.low_income",
+                    "Special Group Type.adaptive_scooters"
+                  ]
+                }
+              ]
+            },
+            {
+              "api_name": "agency",
+              "required_endpoints": [
+                {
+                  "endpoint_name": "events"
+                },
+                {
+                  "endpoint_name": "trips",
+                  "required_fields": [
+                    "actual_cost",
+                    "standard_cost"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "data_spec_name": "GBFS",
+          "version": "2.3",
+          "required_apis": [
+            {
+              "required_endpoints": [
+                {
+                  "endpoint_name": "gbfs.json"
+                },
+                {
+                  "endpoint_name": "system_information.json"
+                },
+                {
+                  "endpoint_name": "free_bike_status.json"
+                },
+                {
+                  "endpoint_name": "system_information.json"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
