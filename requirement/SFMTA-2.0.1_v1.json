@@ -16,8 +16,7 @@
     {
       "description": "Powered Scooter Share Permit Program",
       "program_website_url": "https://www.sfmta.com/projects/powered-scooter-share-permit-program",
-      "provider_ids": [
-      ],
+      "provider_ids": [],
       "vehicle_types": [
         "scooter"
       ],
@@ -118,6 +117,7 @@
     {
       "description": "Shared Electric Moped Parking Permit Program",
       "program_website_url": "https://www.sfmta.com/projects/shared-electric-moped-parking-permit-program",
+      "provider_ids":[],
       "vehicle_types": [
         "moped"
       ],
