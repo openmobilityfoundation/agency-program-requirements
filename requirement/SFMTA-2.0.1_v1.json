@@ -149,6 +149,12 @@
                     "Special Group Type.low_income",
                     "Special Group Type.adaptive_scooters"
                   ]
+                },
+                {
+                  "endpoint_name":"vehicles"
+                },
+                {
+                  "endpoint_name":"vehicles/status"
                 }
               ]
             },
