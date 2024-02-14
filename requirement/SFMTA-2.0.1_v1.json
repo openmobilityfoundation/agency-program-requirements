@@ -10,7 +10,7 @@
     "agency_language": "en-US",
     "agency_currency": "USD",
     "agency_website_url": "https://www.sfmta.com/",
-    "url": "https://raw.githubusercontent.com/openmobilityfoundation/agency-program-requirements/main/requirement/SFMTA-2.0.1.json"
+    "url": "https://raw.githubusercontent.com/openmobilityfoundation/agency-program-requirements/main/requirement/SFMTA-2.0.1_v1.json"
   },
   "programs": [
     {
@@ -47,9 +47,9 @@
                 {
                   "endpoint_name": "reports",
                   "required_fields": [
-                    "Special Group Type.all_riders",
-                    "Special Group Type.low_income",
-                    "Special Group Type.adaptive_scooters"
+                    "special_group_type.all_riders",
+                    "special_group_type.low_income",
+                    "special_group_type.adaptive_scooters"
                   ]
                 },
                 {
@@ -151,7 +151,7 @@
                 {
                   "endpoint_name": "reports",
                   "required_fields": [
-                    "Special Group Type.all_riders"
+                    "special_group_type.all_riders"
                   ]
                 },
                 {
